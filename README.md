@@ -1,33 +1,14 @@
-# A-Frame Webpack Boilerplate
+## Setup
+Download [Node.js](https://nodejs.org/en/download/).
+Run this followed commands:
 
-A Webpack-powered boilerplate for creating WebVR scenes using A-Frame.
-
-## Installation
-
-Install dependencies:
-
-```
+``` bash
+# Install dependencies (only the first time)
 npm install
-```
 
-## Local Development
+# Run the local server at localhost:8080
+npm run dev
 
-To serve the site from `webpack-dev-server`:
-
-```
-npm start
-```
-
-Your A-Frame app will launch at `http://localhost:3000` automatically.
-
-## Building
-
-Build with Webpack:
-
-```
+# Build for production in the dist/ directory
 npm run build
 ```
-
-## License
-
-This program is free software and is distributed under an [MIT License](LICENSE).

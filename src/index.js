@@ -1,3 +1,5 @@
-import aframe from 'aframe';
+import App from "./App"
 
-console.log('Now go make something neat!');
+const app = new App("Hello World");
+
+app.run();
