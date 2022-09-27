@@ -1,4 +1,5 @@
 const path = require('path')
+const fs = require('fs')
 const { merge } = require('webpack-merge')
 const commonConfiguration = require('./webpack.common.js')
 const portFinderSync = require('portfinder-sync')
@@ -21,8 +22,12 @@ module.exports = merge(
         {
             host: 'local-ip',
             port: portFinderSync.getPort(8080),
+            https: {
+                key: fs.readFileSync('./ssl_certificates/192.168.1.4-key.pem'),
+                cert: fs.readFileSync('./ssl_certificates/192.168.1.4.pem'),
+            },
             open: true,
-            https: false,
+            https: true,
             allowedHosts: 'all',
             hot: false,
             watchFiles: ['src/**', 'static/**'],
