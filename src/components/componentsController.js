@@ -1,4 +1,4 @@
-import {test} from "./test.ts"
+import {test} from "./test"
 
 export default class componentsController {
     constructor() {
