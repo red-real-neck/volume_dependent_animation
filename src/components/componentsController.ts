@@ -1,5 +1,5 @@
 // import * as AFRAME from "aframe"
-import {test} from "./test"
+import {test} from "./test";
 
 export default class componentsController {
     constructor() {
@@ -7,7 +7,7 @@ export default class componentsController {
     }
 
     register() {
-        AFRAME.registerComponent("test", test)
-        document.querySelector('#sphere').setAttribute("test", "")
+        AFRAME.registerComponent("test", test);
+        document.querySelector('#sphere').setAttribute("test", "");
     }
 }
