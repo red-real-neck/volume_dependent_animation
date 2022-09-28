@@ -1,3 +1,4 @@
+// import * as AFRAME from "aframe"
 import {test} from "./test"
 
 export default class componentsController {
